@@ -1,0 +1,167 @@
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif; /* Приятный шрифт без засечек */
+    margin: 0;
+    padding: 0;
+    background-color: #fdf6f0; /* Светло-кремовый фон */
+    color: #4a3b31; /* Темно-коричневый цвет текста */
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Центрирование контейнера */
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    color: #d77060; /* Аппетитный коралловый цвет для заголовков */
+}
+
+/* Шапка сайта */
+header {
+    background-color: #ffffff; /* Белый фон шапки */
+    padding: 20px 0;
+    border-bottom: 3px solid #f0a08c; /* Нежная розовая граница */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header .container {
+    display: flex; /* Располагаем лого и навигацию в один ряд */
+    justify-content: space-between; /* Разносим их по краям */
+    align-items: center; /* Выравниваем по центру вертикально */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header nav ul {
+    list-style: none; /* Убираем маркеры списка */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Располагаем пункты меню в ряд */
+}
+
+header nav ul li {
+    margin-left: 25px; /* Отступ между пунктами меню */
+}
+
+header nav ul li a {
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    color: #4a3b31;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease; /* Плавная смена цвета при наведении */
+}
+
+header nav ul li a:hover {
+    color: #d77060; /* Цвет ссылки при наведении */
+}
+
+/* Секция Hero */
+#hero {
+    background-image: url('https://via.placeholder.com/1200x400.png?text=Вкуснейшие+десерты!'); /* Фоновое изображение (заглушка) */
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Белый текст на темном фоне */
+    text-align: center;
+    padding: 80px 20px;
+    margin-bottom: 40px;
+}
+
+#hero h2 {
+    font-size: 3em;
+    margin-bottom: 15px;
+    color: #fff; /* Убедимся, что заголовок на баннере белый */
+}
+
+#hero p {
+    font-size: 1.5em;
+}
+
+/* Каталог товаров */
+#catalog h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Адаптивная сетка товаров */
+    gap: 30px; /* Промежуток между карточками */
+}
+
+.product-card {
+    background-color: #ffffff;
+    border: 1px solid #f0e4d8; /* Светлая граница карточки */
+    border-radius: 8px; /* Скругленные углы */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Плавные эффекты при наведении */
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Немного приподнимаем карточку */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.product-card .description {
+    font-size: 0.9em;
+    color: #6c5ce7; /* Немного другой цвет для описания */
+    min-height: 60px; /* Чтобы карточки были примерно одной высоты */
+    margin-bottom: 15px;
+}
+
+.product-card .price {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #2c7d5a; /* Зеленый цвет для цены - как символ свежести */
+    margin-bottom: 20px;
+}
+
+.product-card button {
+    background-color: #d77060; /* Коралловый цвет кнопки */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer; /* Указывает, что на кнопку можно нажать */
+    transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+    background-color: #c35a4a; /* Более темный оттенок при наведении */
+}
+
+/* Подвал сайта */
+footer {
+    background-color: #4a3b31; /* Темно-коричневый фон подвала */
+    color: #fdf6f0; /* Светлый текст в подвале */
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
